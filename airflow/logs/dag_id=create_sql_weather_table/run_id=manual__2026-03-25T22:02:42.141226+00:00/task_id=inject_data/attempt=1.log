@@ -1,0 +1,14 @@
+{"timestamp":"2026-03-25T22:02:47.425098Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-25T22:02:47.426104Z","level":"info","event":"Filling up the DagBag from /home/d1zer99/airflow/dags/create_sql_weather_table.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-25T22:02:47.531974Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/home/d1zer99/airflow/dags/create_sql_weather_table.py","lineno":7,"logger":"py.warnings"}
+{"timestamp":"2026-03-25T22:02:47.534074Z","level":"info","event":"Stats instance was created in PID 50257 but accessed in PID 50887. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-03-25T22:02:47.581745Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-25T22:02:47.582138Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-25T22:02:47.582391Z","level":"info","event":"Current task name:inject_data","logger":"task.stdout"}
+{"timestamp":"2026-03-25T22:02:47.582588Z","level":"info","event":"Dag name:create_sql_weather_table","logger":"task.stdout"}
+{"timestamp":"2026-03-25T22:02:47.582311Z","level":"info","event":"Executing: \n        INSERT INTO weather (timestamp, temp) VALUES\n        (1774475438,\n        280.86);\n        ","logger":"airflow.task.operators.airflow.providers.common.sql.operators.sql.SQLExecuteQueryOperator","filename":"sql.py","lineno":410}
+{"timestamp":"2026-03-25T22:02:47.599825Z","level":"info","event":"Running statement: \n        INSERT INTO weather (timestamp, temp) VALUES\n        (1774475438,\n        280.86);\n        , parameters: None","logger":"airflow.task.hooks.airflow.providers.sqlite.hooks.sqlite.SqliteHook","filename":"sql.py","lineno":861}
+{"timestamp":"2026-03-25T22:02:47.609710Z","level":"info","event":"Rows affected: 1","logger":"airflow.task.hooks.airflow.providers.sqlite.hooks.sqlite.SqliteHook","filename":"sql.py","lineno":879}
+{"timestamp":"2026-03-25T22:02:47.646527Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-25T22:02:47.646800Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-25T22:02:47.647347Z","level":"info","event":"Task operator:<Task(SQLExecuteQueryOperator): inject_data>","logger":"task.stdout"}

@@ -1,0 +1,12 @@
+{"timestamp":"2026-03-26T07:12:17.984306Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-26T07:12:17.985647Z","level":"info","event":"Filling up the DagBag from /home/d1zer99/airflow/dags/create_sql_weather_table_hw_v2.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-26T07:12:18.637333Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/home/d1zer99/airflow/dags/create_sql_weather_table_hw_v2.py","lineno":7,"logger":"py.warnings"}
+{"timestamp":"2026-03-26T07:12:18.646165Z","level":"info","event":"Stats instance was created in PID 507 but accessed in PID 65766. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-03-26T07:12:18.771682Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-26T07:12:18.772337Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-26T07:12:18.773135Z","level":"info","event":"Current task name:create_weather_table","logger":"task.stdout"}
+{"timestamp":"2026-03-26T07:12:18.774101Z","level":"info","event":"Dag name:weather_pipeline_v2","logger":"task.stdout"}
+{"timestamp":"2026-03-26T07:12:18.807963Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":229}
+{"timestamp":"2026-03-26T07:12:18.892467Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-26T07:12:18.892838Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-26T07:12:18.893158Z","level":"info","event":"Task operator:<Task(PythonOperator): create_weather_table>","logger":"task.stdout"}

@@ -1,0 +1,13 @@
+{"timestamp":"2026-03-25T21:54:05.457729Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-03-25T21:54:05.458572Z","level":"info","event":"Filling up the DagBag from /home/d1zer99/airflow/dags/create_sql_weather_table.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-03-25T21:54:05.659289Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/home/d1zer99/airflow/dags/create_sql_weather_table.py","lineno":7,"logger":"py.warnings"}
+{"timestamp":"2026-03-25T21:54:05.662795Z","level":"info","event":"Stats instance was created in PID 507 but accessed in PID 49821. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-03-25T21:54:05.693334Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-03-25T21:54:05.693575Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-03-25T21:54:05.693735Z","level":"info","event":"Current task name:check_weather_api","logger":"task.stdout"}
+{"timestamp":"2026-03-25T21:54:05.693833Z","level":"info","event":"Dag name:create_sql_weather_table","logger":"task.stdout"}
+{"timestamp":"2026-03-25T21:54:05.694775Z","level":"info","event":"Poking: data/2.5/weather","logger":"airflow.task.operators.airflow.providers.http.sensors.http.HttpSensor","filename":"http.py","lineno":138}
+{"timestamp":"2026-03-25T21:54:05.913855Z","level":"info","event":"Success criteria met. Exiting.","logger":"airflow.task.operators.airflow.providers.http.sensors.http.HttpSensor","filename":"sensor.py","lineno":250}
+{"timestamp":"2026-03-25T21:54:05.938805Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-03-25T21:54:05.939000Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-03-25T21:54:05.939659Z","level":"info","event":"Task operator:<Task(HttpSensor): check_weather_api>","logger":"task.stdout"}
